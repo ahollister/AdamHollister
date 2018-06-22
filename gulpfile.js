@@ -21,7 +21,7 @@ var config = {
 	styles: {
 		sourceDir: 'assets/sass',
 		sourceFile: 'assets/sass/style.scss',
-		targetDir: 'dist/sass',
+		targetDir: 'dist/css',
 	},
 	scripts: {
 		sourceFile: 'assets/js/**/*.js',

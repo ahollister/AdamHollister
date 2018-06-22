@@ -4,7 +4,7 @@
  */
 function adamhollistercv_styles_scripts() {
 	// Main stylesheet (gulp compiles to here)
-	wp_enqueue_style( 'adamhollistercv-style', get_template_directory_uri() . '/dist/sass/style.min.css' );
+	wp_enqueue_style( 'adamhollistercv-style', get_template_directory_uri() . '/dist/css/style.min.css' );
 
 	// Main JS file (gulp compiles to here)
 	wp_enqueue_script(
