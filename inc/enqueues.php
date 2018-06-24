@@ -4,14 +4,19 @@
  */
 function adamhollistercv_styles_scripts() {
 	// Main stylesheet (gulp compiles to here)
-	wp_enqueue_style( 'adamhollistercv-style', get_template_directory_uri() . '/dist/css/style.min.css' );
+	wp_enqueue_style(
+		'adamhollistercv-style',
+		get_template_directory_uri() . '/dist/css/style.min.css',
+		array(),
+		filemtime( get_template_directory() . '/dist/css/style.min.css' ) // Bump version number when file contents changes
+	);
 
 	// Main JS file (gulp compiles to here)
 	wp_enqueue_script(
 		'adamhollistercv-js',
 		get_template_directory_uri() . '/dist/js/scripts.min.js',
-		array( 'jQuery' ),
-		filemtime( get_template_directory() . '/dist/js/scripts.min.js' ), // Need to use get_template_directory for filemtime
+		array( 'jquery' ),
+		filemtime( get_template_directory() . '/dist/js/scripts.min.js' ), // Bump version number when file contents changes
 		true
 	);
 }
