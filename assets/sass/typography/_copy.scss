@@ -1,5 +1,6 @@
 p {
 	margin-bottom: 1.5em;
+	@include font-size(1.0);
 }
 
 dfn, cite, em, i {

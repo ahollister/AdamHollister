@@ -1,5 +1,30 @@
-$color__background-body: #fff;
-$color__background-screen: #f1f1f1;
+// Dracula Syntax colors
+$color__very-dark-gray: #282a36; // Background
+$color__dark-gray: #44475a; // Current Line & Selection
+$color__gray: #666666;
+$color__light-gray: #999999;
+$color__very-light-gray: #f8f8f2; // Foreground
+$color__blue: #6272a4; // Comment
+
+$color__cyan: #8be9fd;
+$color__soft-cyan: #66d9ef;
+$color__green: #50fa7b;
+$color__orange: #ffb86c;
+$color__pink: #ff79c6;
+$color__purple: #bd93f9;
+$color__red: #ff5555;
+$color__yellow: #f1fa8c;
+$color__dark-yellow: #E6DB74;
+$color__sandstone: #cfcfc2;
+
+$color__lace: #f8f8f0;
+$color__white: #ffffff;
+$color__black: #000000;
+
+
+// Site colors
+$color__background-body: darken( $color__very-dark-gray, 8% );
+$color__background-screen: $color__lace;
 $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
 $color__background-pre: #eee;
@@ -8,10 +33,10 @@ $color__background-ins: #fff9c0;
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
-$color__text-main: #404040;
+$color__link: $color__cyan;
+$color__link-visited: $color__purple;
+$color__link-hover: $color__soft-cyan;
+$color__text-main: $color__lace;
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
