@@ -1,0 +1,59 @@
+.page-template-template-cv {
+	.typed-cursor {
+		display: none;
+	}
+}
+
+.cv-section {
+	margin-top: 8em;
+
+	.cv-section-title {
+		color: $color__purple;
+	}
+	&.cv-section--introduction {
+		margin-top: 0;
+
+		strong {
+			@include font-size(1);
+			color: $color__green;
+
+			&:nth-of-type(1),
+			&:nth-of-type(5),
+			&:nth-of-type(7) {
+				color: $color__pink;
+			}
+			&:nth-of-type(2),
+			&:nth-of-type(6) {
+				color: $color__purple;
+			}
+			&:nth-of-type(3) {
+				color: $color__yellow;
+			}
+		}
+	}
+}
+
+.cv-item {
+	margin-bottom: 4em;
+}
+
+.cv-item__title {
+	margin-bottom: 0.3125em;
+
+	span {
+		font-family: $font__main;
+		color: $color__purple;
+		color: $color__green;
+		margin-left: 0.5em;
+		@include font-size(1);
+
+		&:before {
+			content: '- ';
+		}
+	}
+}
+
+.cv-item__date {
+	color: $color__soft-cyan;
+	@include font-size(0.75);
+}

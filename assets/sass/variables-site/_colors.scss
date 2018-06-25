@@ -27,7 +27,7 @@ $color__background-body: darken( $color__very-dark-gray, 8% );
 $color__background-screen: $color__lace;
 $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
-$color__background-pre: #eee;
+$color__background-pre: $color__background-body;
 $color__background-ins: #fff9c0;
 
 $color__text-screen: #21759b;
