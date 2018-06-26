@@ -1,0 +1,10 @@
+// Hide SVG definitions (used in icons)
+#svg-defs {
+	display: none;
+}
+
+.icon {
+	height: 29px;
+	width: 29px;
+	fill: $color__black;
+}

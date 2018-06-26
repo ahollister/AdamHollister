@@ -5,11 +5,12 @@
 }
 
 .cv-section {
-	margin-top: 8em;
+	margin-top: 6em;
 
 	.cv-section-title {
 		color: $color__purple;
 	}
+	
 	&.cv-section--introduction {
 		margin-top: 0;
 
