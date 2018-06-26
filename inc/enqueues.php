@@ -3,9 +3,6 @@
  * Enqueue scripts and styles
  */
 function adamhollistercv_styles_scripts() {
-	// Google Fonts
-	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:100|Fira+Mono' );
-
 	// Main stylesheet (gulp compiles to here)
 	wp_enqueue_style(
 		'adamhollistercv-style',
