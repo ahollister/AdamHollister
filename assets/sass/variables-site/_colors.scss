@@ -23,7 +23,9 @@ $color__black: #000000;
 
 
 // Site colors
-$color__background-body: darken( $color__very-dark-gray, 8% );
+// $color__background-body: darken( $color__very-dark-gray, 8% );
+$color__background-body: $color__very-dark-gray;
+$color__background-body: $color__very-dark-gray;
 $color__background-screen: $color__lace;
 $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
