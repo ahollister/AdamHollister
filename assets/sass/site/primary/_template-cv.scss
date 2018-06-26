@@ -10,7 +10,7 @@
 	.cv-section-title {
 		color: $color__purple;
 	}
-	
+
 	&.cv-section--introduction {
 		margin-top: 0;
 
@@ -57,4 +57,30 @@
 .cv-item__date {
 	color: $color__soft-cyan;
 	@include font-size(0.75);
+}
+
+// Modals
+.cv-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow-y: scroll;
+	background: $color__background-body;
+	padding: 20px;
+
+	@media only screen and (min-width: 768px) {
+		padding: 50px;
+	}
+}
+
+.cv-modal--active {
+	overflow-y: hidden;
+}
+
+.cv-modal__inner {
+	max-width: 550px;
+	margin: 0 auto;
 }
