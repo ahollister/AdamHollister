@@ -3,6 +3,7 @@
  * Template part for displaying the projects modal
  */
 ?>
+
 <article class="cv-modal cv-modal--projects" data-modal="projects">
 	<div class="cv-modal__inner">
 		<header>

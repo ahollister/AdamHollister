@@ -1,5 +1,5 @@
 .site-title {
-	max-width: 550px;
+	max-width: $width__container-thin;
 	margin: 0 auto;
 	@include font-size(2);
 	@media only screen and (min-width: 560px) {
@@ -22,7 +22,7 @@
 }
 
 .page-subheader {
-	min-height: 38px;
+	min-height: 2.375em;
 	font-weight: normal;
 	color: $color__green;
 }

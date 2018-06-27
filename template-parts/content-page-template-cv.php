@@ -108,10 +108,9 @@ $data = get_fields();
 
 	<?php
 	// Projects modal
-	include( locate_template( 'template-parts/content-modal-projects.php', true, true ) );
-
+	include locate_template( 'template-parts/content-modal-projects.php' );
 	// Skills modal
-	include( locate_template( 'template-parts/content-modal-skills.php', true, true ) );
+	include locate_template( 'template-parts/content-modal-skills.php' );
 	?>
 
 </article>
