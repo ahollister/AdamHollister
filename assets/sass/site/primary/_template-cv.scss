@@ -4,13 +4,18 @@
 	}
 }
 
+.cv {
+	max-width: $width__container-thin;
+	margin: 0 auto;
+}
+
 .cv-section {
 	margin-top: 6em;
 
 	.cv-section-title {
 		color: $color__purple;
 	}
-	
+
 	&.cv-section--introduction {
 		margin-top: 0;
 

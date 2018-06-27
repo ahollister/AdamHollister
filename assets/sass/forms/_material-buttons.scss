@@ -8,6 +8,12 @@
 	box-shadow: 0 3px 3px 1px $color__black;
 	border-bottom: 2px solid lighten($color__purple, 5%);
 
+	.icon {
+		position: relative;
+		top: 1px;
+		pointer-events: none;
+	}
+
 	&:before {
 		@include font-size(0.75);
 		position: absolute;
@@ -50,9 +56,23 @@
 			left: -75px;
 		}
 	}
+	&.material-button--close {
+		display: none;
+		right: 35px;
+		bottom: 20px;
+		&:before {
+			content: 'Close';
+			left: -68px;
+		}
+	}
+}
 
-	.icon {
-		position: relative;
-		top: 1px;
+.cv-modal--active {
+	.material-button {
+		display: none;
+
+		&.material-button--close {
+			display: block;
+		}
 	}
 }

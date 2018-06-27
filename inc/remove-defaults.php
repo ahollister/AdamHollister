@@ -4,10 +4,10 @@
  */
 
 // Remove WP Embed script
-function my_deregister_embed_script() {
+function adamhollistercv_deregister_embed_script() {
 	wp_deregister_script( 'wp-embed' );
 }
-add_action( 'wp_footer', 'my_deregister_embed_script' );
+add_action( 'wp_footer', 'adamhollistercv_deregister_embed_script' );
 
 // Remove Emoji script
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );

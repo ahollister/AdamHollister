@@ -1,33 +1,28 @@
-.site-header {
-	.site-title {
-		max-width: 550px;
-		margin: 0 auto;
+.site-title {
+	max-width: $width__container-thin;
+	margin: 0 auto;
+	@include font-size(2);
+	@media only screen and (min-width: 560px) {
+		@include font-size(2.625);
+	}
 
-		a {
-			color: $color__text-main;
-			text-decoration: none;
-			font-family: $font__header;
-			@include font-size(2);
-			@media only screen and (min-width: 560px) {
-				@include font-size(2.625);
-			}
-		}
+	a {
+		color: $color__text-main;
+		text-decoration: none;
+		font-family: $font__header;
 	}
 }
 
-.page-header {
-	.page-title {
-		margin-bottom: 2em;
-		@include font-size(1.375);
-
-		@media only screen and (min-width: 560px) {
-			@include font-size(1.625);
-		}
+.page-title {
+	margin-bottom: 2em;
+	@include font-size(1.375);
+	@media only screen and (min-width: 560px) {
+		@include font-size(1.625);
 	}
 }
 
 .page-subheader {
-	min-height: 38px;
+	min-height: 2.375em;
 	font-weight: normal;
 	color: $color__green;
 }

@@ -14,3 +14,6 @@ require get_template_directory() . '/inc/menus.php';
 
 // Enqueue styles and scripts
 require get_template_directory() . '/inc/enqueues.php';
+
+// Custom Post Types
+require get_template_directory() . '/inc/post-types.php';

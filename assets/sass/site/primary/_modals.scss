@@ -1,0 +1,63 @@
+// Modals
+.cv-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow-y: scroll;
+	background: $color__background-body;
+	padding: 1.25em;
+
+	@media only screen and (min-width: 768px) {
+		padding: 3.125em;
+	}
+}
+
+.cv-modal--active {
+	overflow-y: hidden;
+}
+
+.cv-modal__inner {
+	max-width: $width__container;
+	margin: 0 auto;
+
+	&.cv-modal__inner--thin {
+		max-width: $width__container-thin;
+	}
+}
+
+.cv-modal--skills {
+	.cv-modal__introduction {
+		margin-bottom: 1em;
+	}
+}
+
+.cv-modal__introduction {
+	margin-bottom: 3em;
+	max-width: 42.5em;
+
+	p {
+		margin: 0;
+		color: $color__soft-cyan;
+		@include font-size(0.875);
+	}
+}
+
+.cv-modal__list {
+	margin-bottom: 2em;
+
+	li {
+		display: inline-block;
+		list-style-type: none;
+		&:after {
+			content: ' - '
+		}
+		&:last-of-type {
+			&:after {
+				content: none;
+			}
+		}
+	}
+}

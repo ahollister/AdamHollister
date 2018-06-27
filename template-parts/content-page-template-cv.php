@@ -6,22 +6,23 @@
 $data = get_fields();
 ?>
 
-<article>
-	<header class="page-header">
+<article class="cv">
+	<header>
 		<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	</header>
 
-	<h2 class="page-subheader">
-		<span class="screen-reader-text">
-			<?php echo esc_html( $data['welcome_text'] ); ?>
-		</span>
-	</h2>
+	<section class="cv-section cv-section--introduction">
+		<h2 class="page-subheader">
+			<span class="screen-reader-text">
+				<?php echo esc_html( $data['welcome_text'] ); ?>
+			</span>
+		</h2>
+		<div class="cv-introduction fadein">
+			<?php echo wp_kses_post( $data['introduction'] ); ?>
+		</div>
+	</section><!-- Introduction -->
 
-	<div class="cv-section cv-section--introduction fadein">
-		<?php echo wp_kses_post( $data['introduction'] ); ?>
-	</div><!-- Introduction -->
-
-	<div class="cv-section cv-section--experience">
+	<section class="cv-section cv-section--experience">
 		<h2 class="cv-section-title">
 			<?php echo esc_html( $data['experience_section_title'] ); ?>
 		</h2>
@@ -58,11 +59,10 @@ $data = get_fields();
 				</div>
 			</div>
 		<?php endforeach; ?>
+	</section><!-- Experience -->
 
-	</div><!-- Experience -->
 
-
-	<div class="cv-section cv-section--education">
+	<section class="cv-section cv-section--education">
 		<h2 class="cv-section-title">
 			<?php echo esc_html( $data['education_section_title'] ); ?>
 		</h2>
@@ -104,6 +104,13 @@ $data = get_fields();
 
 			</div><!-- Item -->
 		<?php endforeach; ?>
-	</div><!-- Education -->
+	</section><!-- Education -->
+
+	<?php
+	// Projects modal
+	include locate_template( 'template-parts/content-modal-projects.php' );
+	// Skills modal
+	include locate_template( 'template-parts/content-modal-skills.php' );
+	?>
 
 </article>
