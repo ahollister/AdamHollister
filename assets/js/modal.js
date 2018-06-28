@@ -1,14 +1,16 @@
 (function($) {
 	$(document).ready(function(e) {
 		function openModal(event) {
-			let modalToActivate = $('.cv-modal[data-modal="' + $(event.target).data('modal') + '"');
-			modalToActivate.css('display', 'block');
+			let modalSelector = '.cv-modal[data-modal="' + $(event.target).data('modal') + '"]';
+			$(modalSelector).addClass('cv-modal--active');
 			$('body').addClass('cv-modal--active');
 		}
 
 		function closeModals() {
 			$('.cv-modal').each(function() {
-				$(this).css('display', 'none');
+				if ( $(this).hasClass('cv-modal--active') ) {
+					$(this).removeClass('cv-modal--active');
+				}
 			});
 			$('body').removeClass('cv-modal--active');
 		}
