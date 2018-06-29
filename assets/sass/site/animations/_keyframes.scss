@@ -1,13 +1,49 @@
+// Animate classes
 .fadein {
 	animation: fadein 5.5s;
+}
 
-	@keyframes fadein {
-		0%,
-		50% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
+@keyframes fadein {
+	0%,
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+// Modal animations
+@keyframes modalGrow {
+	0% {
+		width: 0%;
+		height: 0%;
+		background-color: $color__dark-gray;
+		opacity: 0.5;
+	}
+
+	100% {
+		width: 150%;
+		height: 150%;
+		background-color: $color__dark-gray;
+		opacity: 0;
+	}
+}
+
+@keyframes modalFadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes modalFadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
 	}
 }

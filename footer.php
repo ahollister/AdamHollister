@@ -17,8 +17,16 @@
 		<svg id="svg-defs" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<defs>
 				<symbol id="icon-close" viewBox="0 0 24 24">
-					<title><?php esc_html( 'Close modal' ); ?></title>
+					<title><?php esc_html( 'Close' ); ?></title>
 					<path d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z"></path>
+				</symbol>
+				<symbol id="icon-menu" viewBox="0 0 24 24">
+					<title><?php esc_html( 'Menu' ); ?></title>
+					<path d="M12 15.984c1.078 0 2.016 0.938 2.016 2.016s-0.938 2.016-2.016 2.016-2.016-0.938-2.016-2.016 0.938-2.016 2.016-2.016zM12 9.984c1.078 0 2.016 0.938 2.016 2.016s-0.938 2.016-2.016 2.016-2.016-0.938-2.016-2.016 0.938-2.016 2.016-2.016zM12 8.016c-1.078 0-2.016-0.938-2.016-2.016s0.938-2.016 2.016-2.016 2.016 0.938 2.016 2.016-0.938 2.016-2.016 2.016z"></path>
+				</symbol>
+				<symbol id="icon-back" viewBox="0 0 24 24">
+					<title><?php esc_html( 'Back' ); ?></title>
+					<path d="M20.016 11.016v1.969h-12.188l5.578 5.625-1.406 1.406-8.016-8.016 8.016-8.016 1.406 1.406-5.578 5.625h12.188z"></path>
 				</symbol>
 				<symbol id="icon-projects" viewBox="0 0 24 24">
 					<title><?php esc_html( 'See Projects' ); ?></title>

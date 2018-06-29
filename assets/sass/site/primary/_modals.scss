@@ -25,12 +25,6 @@
 	}
 }
 
-.cv-modal--skills {
-	.cv-modal__introduction {
-		margin-bottom: 1em;
-	}
-}
-
 .cv-modal__introduction {
 	margin-bottom: 3em;
 	max-width: 42.5em;
@@ -41,6 +35,13 @@
 		@include font-size(0.875);
 	}
 }
+
+.cv-modal--skills {
+	.cv-modal__introduction {
+		margin-bottom: 1em;
+	}
+}
+
 
 .cv-modal__list {
 	margin-bottom: 2em;
@@ -59,7 +60,7 @@
 	}
 }
 
-// Modal animations
+// Open modal
 .cv-modal.cv-modal--active {
 	display: block;
 
@@ -78,10 +79,10 @@
 		left: auto;
 		bottom: 0;
 		right: 0;
+		opacity: 0;
 		transform: translate(50%, 50%);
 		border-radius: 50%;
 		background-color: transparent;
-		opacity: 0;
 		pointer-events: none;
 
 		animation: modalGrow 0.5s forwards;
@@ -91,42 +92,4 @@
 
 body.cv-modal--active {
 	overflow-y: hidden;
-}
-
-body.cv-modal--active *:not(.cv-modal.cv-modal--active) {
-	display: none;
-}
-
-@keyframes modalGrow {
-	0% {
-		width: 0%;
-		height: 0%;
-		background-color: $color__dark-gray;
-		opacity: 0.5;
-	}
-
-	100% {
-		width: 150%;
-		height: 150%;
-		background-color: $color__dark-gray;
-		opacity: 0;
-	}
-}
-
-@keyframes modalFadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes modalFadeOut {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
 }
