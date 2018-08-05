@@ -1,3 +1,13 @@
+header,
+.site-header {
+	background: $color__very-dark-gray;
+	color: $color__white;
+}
+
+.site-header {
+	padding-top: 2em;
+}
+
 .site-title {
 	max-width: $width__container-thin;
 	margin: 0 auto;
@@ -7,14 +17,16 @@
 	}
 
 	a {
-		color: $color__text-main;
+		color: $color__white;
 		text-decoration: none;
 		font-family: $font__header;
 	}
 }
 
 .page-title {
-	margin-bottom: 2em;
+	padding-bottom: 2em;
+	max-width: $width__container-thin;
+	margin: 0 auto;
 	@include font-size(1.375);
 	@media only screen and (min-width: 560px) {
 		@include font-size(1.625);

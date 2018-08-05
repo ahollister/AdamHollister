@@ -6,7 +6,7 @@
 		position: fixed;
 		border-radius: 50%;
 		border: none;
-		box-shadow: 0 3px 3px 1px $color__black;
+		box-shadow: 0 2px 2px 0px lighten($color__black, 50%);
 		border-bottom: 2px solid lighten($color__purple, 5%);
 
 		.icon {
